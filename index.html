@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/main.css" />
+
+  </head>
+  <body>
+    <!-- #region  wraper-->
+  <div class="wraper">
+      <!-- #region header-->
+      <header class="header">
+        <h1 class="headerTitle">this is our website</h1>
+        <!-- #region  menu desktop-->
+        <nav class="headerMenuDesktop">
+          <div class="headerMenuDesktopDiv">
+            <a href="#" class="headerMenuDesktopLink">home</a>
+          </div>
+          <div class="headerMenuDesktopDiv">
+            <a href="#" class="headerMenuDesktopLink">gallery</a>
+          </div>
+          <div class="headerMenuDesktopDiv">
+            <a href="#" class="headerMenuDesktopLink">contact</a>
+          </div>
+          <div class="headerMenuDesktopDiv">
+            <a href="#" class="headerMenuDesktopLink">about us</a>
+          </div>
+        </nav>
+        <!-- #endregion -->
+        <!-- #region  menu mobile-->
+        <label for="open"><span class="svgMenu">&#128187;</span></label>
+        <input type="radio" name="menu" id="open" />
+        <nav class="headerMenuMobile">
+          <div class="headerMenuDesktopDiv">
+            <label for="close"><span class="svgMenu">&timesbar;</span></label>
+            <input type="radio" name="menu" id="close" />
+          </div>
+          <div class="headerMenuDesktopDiv">
+            <a href="#" class="headerMenuDesktopLink">home</a>
+          </div>
+          <div class="headerMenuDesktopDiv">
+            <a href="#" class="headerMenuDesktopLink">gallery</a>
+          </div>
+          <div class="headerMenuDesktopDiv">
+            <a href="#" class="headerMenuDesktopLink">contact</a>
+          </div>
+          <div class="headerMenuDesktopDiv">
+            <a href="#" class="headerMenuDesktopLink">about us</a>
+          </div>
+        </nav>
+  
+        <!-- #endregion menu moblie -->
+      </header>
+      <!-- #endregion -->
+       
+  <!-- #region  baner desktop -->
+  <div class="banerDesktop">
+
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="./images/allen.png" class="swiper-slide-img" alt=""></div>
+        <div class="swiper-slide"><img src="./images/king.png" class="swiper-slide-img" alt=""></div>
+        <div class="swiper-slide"><img src="./images/ball.jpg" class="swiper-slide-img" alt=""></div>
+        <div class="swiper-slide"><img src="./images/Surface.png" class="swiper-slide-img active" alt=""></div>
+        <div class="swiper-slide"><img src="./images/glass.png" class="swiper-slide-img" alt=""></div>
+  
+        
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+    
+  </div>
+   <!-- #endregion -->
+  <!-- #region make cards -->
+   
+<!-- #endregion -->
+</div>
+<!-- #endregion -->
+
+
+    <script src="./swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        cssMode: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        mousewheel: true,
+        keyboard: true,
+      });
+    </script>
+  </body>
+</html>

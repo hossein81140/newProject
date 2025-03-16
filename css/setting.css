@@ -4,4 +4,8 @@
 }
 .wraper{
 width: 100%;
+
+}
+html , body{
+	scroll-behavior: smooth;
 }
